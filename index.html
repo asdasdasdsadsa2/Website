@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Vercel Site</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Vercel Site</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Fast, simple static site</h1>
+        <p>Deploy this site to Vercel with zero configuration. Built with HTML, CSS, and a bit of JavaScript.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <article>
+        <h2>Lightweight</h2>
+        <p>Minimal assets and fast load times.</p>
+      </article>
+      <article>
+        <h2>Responsive</h2>
+        <p>Looks great on mobile and desktop.</p>
+      </article>
+      <article>
+        <h2>Vercel-ready</h2>
+        <p>Automatic deployments on push to the repository when connected to Vercel.</p>
+      </article>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About this template</h2>
+      <p>This is a starter template created for easy deployment on Vercel. Edit the files in the repository to customize it.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Vercel Site</p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
